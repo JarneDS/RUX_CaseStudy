@@ -13,6 +13,15 @@
     font-style: normal;
 }
 
+:root{
+    --color-bg: #FFF4C8;
+    --color-text: #000;
+    --color-primary: #005866;
+    --color-secondary: #FFB038;
+    --color-thirdly: #C6E6F8;
+    --color-h3: rgba(0, 0, 0, 0.5);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,7 +32,7 @@ html {
 
 body {
     font-family: "Volkhov", serif;
-    background-color: #FFF4C8;
+    background-color: var(--color-bg);
     line-height: 1.5;
     font-weight: 400;
     height: 3500px;
@@ -36,8 +45,8 @@ h1 {
     font-size: clamp(1.875rem, 3.086vw + 1.296rem, 5rem);
     position: absolute;
     z-index: 20;
-    color: #FFF4C8;
-    background-color: #005866;
+    color: var(--color-bg);
+    background-color: var(--color-primary);
     left: 0;
     padding: 12px;
     padding-left: 40px;
@@ -64,7 +73,7 @@ h1 {
 .menu{
     position: fixed;
     z-index: 30;
-    background-color: #005866;
+    background-color: var(--color-primary);
     width: 100%;
     height: 50px;
     top: 0;
@@ -74,7 +83,7 @@ h1 {
 .menu_liste{
     display: flex;
     flex-direction: column;
-    background-color: #005866;
+    background-color: var(--color-primary);
     list-style: none;
     padding: 25px 0;
     margin: 0;
@@ -102,7 +111,7 @@ h1 {
     top: 10px;
     right: 10px;
     z-index: 10;
-    color: #FFF4C8;
+    color: var(--color-bg);
     margin: 5px 0 20px;
 }
 
@@ -111,7 +120,7 @@ h1 {
 }
 
 .menu_liste a{
-    color: #FFF4C8;
+    color: var(--color-bg);
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
@@ -120,10 +129,11 @@ h1 {
 }
 
 .menu_liste a:hover {
-    color: #005866;
-    background-color: #FFEFB2;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 5px 3px 3px var(--color-bg);
 }
 
 .menu_li{
@@ -140,10 +150,11 @@ h1 {
 }
 
 .rotatable:hover {
-    color: #005866;
-    background-color: #FFEFB2;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 5px 3px 3px var(--color-bg);
 }
 
 .rotate {
@@ -158,7 +169,7 @@ h1 {
 .sous_menu{
     position: fixed;
     z-index: 30;
-    background-color: #005866;
+    background-color: var(--color-primary);
     width: 100%;
     top: 0;
     left: 0;
@@ -167,7 +178,7 @@ h1 {
 .sous_menu_liste{
     display: flex;
     flex-direction: column;
-    background-color: #005866;
+    background-color: var(--color-primary);
     list-style: none;
     padding: 25px 0;
     margin: 0;
@@ -188,19 +199,19 @@ h1 {
 }
 
 .sous_menu_liste a, .retour{
-    color: #FFF4C8;
+    color: var(--color-bg);
     text-decoration: none;
     cursor: pointer;
 }
 
 .sous_menu_li{
-    color: #FFF4C8;
+    color: var(--color-bg);
     margin: 27px;
 }
 
 .retour {
     font-size: clamp(0.938rem, 0.926vw + 0.764rem, 1.875rem);
-    color: #FFF4C8;
+    color: var(--color-bg);
     padding: 10px;
     border-radius: 5px;
     transition: all .3s ease-out;
@@ -208,10 +219,11 @@ h1 {
 }
 
 .retour:hover {
-    color: #005866;
-    background-color: #FFEFB2;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 5px 3px 3px var(--color-bg);
 }
 
 .scroll {
@@ -224,7 +236,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #FFF4C8;
+    color: var(--color-bg);
     cursor: pointer;
 }
 
@@ -280,7 +292,7 @@ span {
 
 /* Footer */
 .footer-container {
-    background-color: #005866;
+    background-color: var(--color-primary);
     clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
     margin: 0;
     padding: 20px;
@@ -292,8 +304,8 @@ span {
 }
 
 .btt {
-    background-color: #005866;
-    color: #FFF4C8;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
     text-decoration: none;
     border-radius: 10px;
     padding: 5px;
@@ -301,11 +313,13 @@ span {
     display: block;
     justify-self: end;
     cursor: pointer;
+    transition: all .3s;
 }
 
 .btt:hover {
-    background-color: #FFF4C8;
-    color: #005866;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    box-shadow: 5px 3px 3px var(--color-bg);
 }
 
 .heaj{
@@ -318,6 +332,7 @@ span {
     justify-self: end;
     align-self: flex-end;
     cursor: pointer;
+    transition: all .3s;
 }
 
 .heaj:hover {
@@ -329,7 +344,7 @@ span {
 }
 
 footer p {
-    color: #FFF4C8;
+    color: var(--color-bg);
 }
 
 /*graphiques*/
@@ -349,7 +364,7 @@ footer p {
 }
 
 .graphiques_bg {
-    background-color: #D9D9D9;
+    background-color: var(--color-thirdly);
     border-radius: 20px;
     padding: 10px;
     margin: 27px;
@@ -364,7 +379,7 @@ footer p {
     height: 18px;
     flex-shrink: 0;
     border: 1px solid #000;
-    background: #005866;
+    background: var(--color-primary);
     margin: 12px 0;
 }
 
@@ -373,7 +388,7 @@ footer p {
     height: 18px;
     flex-shrink: 0;
     border: 1px solid #000;
-    background: #FA7624;
+    background: var(--color-secondary);
     margin: 12px 0;
 }
 
@@ -382,7 +397,7 @@ footer p {
     height: 18px;
     flex-shrink: 0;
     border: 1px solid #000;
-    background: #FFEFB2;
+    background: var(--color-bg);
     margin: 12px 0;
 }
 
@@ -393,9 +408,9 @@ footer p {
     height: 100px;
     border-radius: 50%;
     background: conic-gradient(
-      #FA7624 0% 20.8%,
+      #FFB038 0% 20.8%,
       #005866 20.8% 91.6%,
-      #FFEFB2 91.6% 100%
+      #FFF4C8 91.6% 100%
     );
 }
 
@@ -405,7 +420,7 @@ footer p {
     height: 100px;
     border-radius: 50%;
     background: conic-gradient(
-        #FA7624 0% 77.1%,
+        #FFB038 0% 77.1%,
         #005866 77.1% 100%
     );
 }
