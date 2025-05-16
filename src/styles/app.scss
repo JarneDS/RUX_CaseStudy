@@ -211,7 +211,8 @@ h1 {
 
 .retour {
     font-size: clamp(0.938rem, 0.926vw + 0.764rem, 1.875rem);
-    color: var(--color-bg);
+    color: var(--color-text);
+    background-color: var(--color-secondary);
     padding: 10px;
     border-radius: 5px;
     transition: all .3s ease-out;
@@ -219,11 +220,10 @@ h1 {
 }
 
 .retour:hover {
-    color: var(--color-primary);
-    background-color: var(--color-secondary);
+    background-color: var(--color-text);
+    color: var(--color-bg);
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 5px 3px 3px var(--color-bg);
 }
 
 .scroll {
@@ -304,8 +304,8 @@ span {
 }
 
 .btt {
-    background-color: var(--color-primary);
-    color: var(--color-bg);
+    background-color: var(--color-secondary);
+    color: var(--color-text);
     text-decoration: none;
     border-radius: 10px;
     padding: 5px;
@@ -317,9 +317,8 @@ span {
 }
 
 .btt:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-    box-shadow: 5px 3px 3px var(--color-bg);
+    background-color: var(--color-text);
+    color: var(--color-bg);
 }
 
 .heaj{
