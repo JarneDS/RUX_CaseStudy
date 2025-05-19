@@ -127,7 +127,7 @@ h1 {
     cursor: pointer;
 }
 
-.menu_liste a:hover {
+.menu_liste a:hover, .menu_liste a.active {
     color: var(--color-secondary);
     padding: 10px;
 }
@@ -655,7 +655,7 @@ content: "";
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         justify-self: end;
-        margin: 0;
+        margin: 10px 0 27px;
     }
 
     .miseEnPage--grid p {
@@ -680,7 +680,8 @@ content: "";
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         margin: 0 12px 30px;
-        justify-self: end;
+        justify-self: start;
+        margin-left: 40%;
     }
 
     .miseEnPageConcept--grid p {
@@ -688,7 +689,8 @@ content: "";
         grid-row: 2 / 3;
         max-width: 500px;
         margin: 0 12px;
-        justify-self: end;
+        justify-self: start;
+        margin-left: 40%;
     }
 
     .miseEnPageConcept--grid img {
@@ -734,7 +736,7 @@ content: "";
         display: flex;
         flex-direction: column;
         gap: 0;
-        margin: 0;
+        margin: 10px 0 27px;
     }
 
     .miseEnPageConception--grid h3 {
@@ -760,7 +762,7 @@ content: "";
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         justify-self: start;
-        margin: 0 60px 30px;;
+        margin: 80px 60px 0;
     }
 
     .miseEnPage__avant-propos--grid p{
