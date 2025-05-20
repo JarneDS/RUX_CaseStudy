@@ -119,3 +119,13 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 1.0 });
 
 sections.forEach(section => observer.observe(section));
+
+/* Back to top */
+
+var backToTopButton = document.querySelector(".btt");
+
+backToTopButton.addEventListener("click", backToTop);
+
+function backToTop(){
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
