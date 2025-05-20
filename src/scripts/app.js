@@ -116,6 +116,6 @@ const observer = new IntersectionObserver((entries) => {
             document.querySelector(`nav a[href="#${entry.target.id}"]`).classList.add("active");
         }
     });
-}, { threshold: 0.5 });
+}, { threshold: 1.0 });
 
 sections.forEach(section => observer.observe(section));
