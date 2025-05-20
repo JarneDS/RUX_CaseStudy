@@ -194,6 +194,10 @@ h1 {
     color: var(--color-bg);
     text-decoration: none;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 
 .sous_menu_li{
